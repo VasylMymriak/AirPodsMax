@@ -1,7 +1,14 @@
 
 @media (max-width: 1485px) {
     .header__content-title{
+        display: flex;
+        justify-content: center;
         font-size: 175px;
+        right: 0;
+        left: 0;
+    }
+    .content-item__active {
+        margin: 0 0 0 88px;
     }
     .choose__color-list{
         flex-wrap: wrap;
@@ -16,6 +23,10 @@
         right: 0;
         text-align: center;
     }
+    .content-item__active {
+        margin: 0 auto;
+    }
+
     .title--s{
         transform: none;
     }
