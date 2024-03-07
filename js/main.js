@@ -24,3 +24,19 @@ function open(evt){
     });
 
 }
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        document.querySelector('.title--air').classList.add('show');
+        document.querySelector('.title--pod').classList.add('show');
+        document.querySelector('.title--s').classList.add('show');
+        document.querySelector('.title--m').classList.add('show');
+        document.querySelector('.title--ax').classList.add('show');
+        document.querySelector('.header__content-title').classList.add('show');
+    }, 1000); // Час затримки в мілісекундах (1000 мілісекунд = 1 секунда)
+    setTimeout(function() {
+        document.querySelector('.header__nav').classList.add('show')
+        document.querySelectorAll('.header__content-images img').forEach(function(img) {
+            img.classList.add('show');
+        });
+    }, 500);
+});
